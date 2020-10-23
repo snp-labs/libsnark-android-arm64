@@ -13,13 +13,13 @@ CMake option
 vi ~/your-workspace/snarkportingtest/app/build.gradle
 
 
--   __-DANDROID_TOOLCHAIN=4.7__ : Select compiler version
--   __-DANDROID_STL=c++_shared__ : If you link library, you need this option
--   __-DWITH_PROCPS=OFF__ : libprocps is not necessary to link the library. 
--   __-DCURVE=ALT_BN128__ : use ALT_BN128
--   __-DWITH_SUPERCOP=OFF__ : supercop is assembly language.(can't use at arm machine)
--   __-DOPT_FLAGS=-Os -march=armv8-a__ : select machine
--   __-DPERFORMANCE=ON__ : OFF DEBUG MODE
+-   __ANDROID_TOOLCHAIN=4.7__ : Select compiler version
+-   __ANDROID_STL=c++_shared__ : If you link library, you need this option
+-   __WITH_PROCPS=OFF__ : libprocps is not necessary to link the library. 
+-   __CURVE=ALT_BN128__ : use ALT_BN128
+-   __WITH_SUPERCOP=OFF__ : supercop is assembly language.(can't use at arm machine)
+-   __OPT_FLAGS=-Os -march=armv8-a__ : select machine
+-   __PERFORMANCE=ON__ : OFF DEBUG MODE
 
 --------------------------------------------------------------------------------
 Project Structure
