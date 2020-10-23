@@ -14,7 +14,7 @@ vi ~/your-workspace/snarkportingtest/app/build.gradle
 
 
 -   __ANDROID_TOOLCHAIN=4.7__ : Select compiler version
--   __ANDROID_STL=c++_shared__ : If you link library, you need this option
+-   ___ANDROID_STL=c++_shared___ : If you link library, you need this option
 -   __WITH_PROCPS=OFF__ : libprocps is not necessary to link the library. 
 -   __CURVE=ALT_BN128__ : use ALT_BN128
 -   __WITH_SUPERCOP=OFF__ : supercop is assembly language.(can't use at arm machine)
