@@ -21,6 +21,8 @@ set_target_properties(
 
         ${CMAKE_SOURCE_DIR}/jniLibs/${ANDROID_ABI}/libgmp.so )
 include_directories( ${CMAKE_SOURCE_DIR}/include)
+include_directories(${CMAKE_SOURCE_DIR}/include/${CMAKE_ANDROID_ARCH_ABI})
+include_directories(${CMAKE_SOURCE_DIR}/libsnark)
 add_library( # Sets the name of the library.
              native-lib
 
