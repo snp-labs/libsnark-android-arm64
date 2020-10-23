@@ -164,7 +164,7 @@ set(
 )
 set(
         GMP_INCLUDE_DIR
-        ${CPP_DIRECORTY}/include/gmp.h
+        ${CPP_DIRECORTY}/include/${CMAKE_ANDROID_ARCH_ABI}/gmp.h
 )
 set(
         GMPXX_LIBRARIES
@@ -174,13 +174,13 @@ set(
 #        Boost_INCLUDE_DIR
 #        ${CPP_DIRECORTY}/include
 #)
-include(FindPkgConfig)
-pkg_check_modules(
-  CRYPTO
-  REQUIRED
-
-  libcrypto
-)
+#include(FindPkgConfig)
+#pkg_check_modules(
+#  CRYPTO
+#  REQUIRED
+#
+#  libcrypto
+#)
 
 if("${WITH_PROCPS}")
   pkg_check_modules(
